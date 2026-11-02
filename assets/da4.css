@@ -353,3 +353,19 @@ footer p.micro:last-child{font-size:9.5px !important;letter-spacing:.2em !import
 #menu .menu-sub-link:hover,#menu .menu-sub-link:active{color:var(--red,#ff6b55) !important}
 #menu li.open .menu-sub{padding-bottom:12px}
 #menu > div > .micro:last-child{justify-content:center !important;gap:8px 22px !important;text-align:center}
+
+/* Mobile : marque complète (Production en rouge + Director / Filmmaker) et touches de rouge */
+.brand-role{display:none}
+@media (max-width:1023px){
+  .site-header .micro > a:first-child{display:grid;grid-template-columns:auto auto;justify-content:start;align-items:center;column-gap:0;row-gap:5px;line-height:1;white-space:nowrap}
+  .brand-role{display:block;grid-column:1/-1;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute)}
+}
+@media (max-width:480px){
+  .site-header .micro{gap:12px}
+  .site-header .micro > a:first-child{font-size:10.5px;letter-spacing:.1em}
+  .brand-prod{margin-left:.55em}.brand-prod .px-1{padding-inline:.2em .35em}
+}
+@media (max-width:767px){
+  .hero4 .hero-sub::before{content:"";display:block;width:30px;height:1px;background:var(--red);margin:0 auto 18px}
+}
+.hero4 .hero-sub .red{color:var(--red)}
