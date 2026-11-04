@@ -369,3 +369,7 @@ footer p.micro:last-child{font-size:9.5px !important;letter-spacing:.2em !import
   .hero4 .hero-sub::before{content:"";display:block;width:30px;height:1px;background:var(--red);margin:0 auto 18px}
 }
 .hero4 .hero-sub .red{color:var(--red)}
+
+/* À propos : titre un peu remonté */
+.about { padding-top: clamp(44px, 7vw, 108px); }
+@media (min-width: 900px) { .about { padding-top: clamp(14px, 1.6vw, 26px); } }
