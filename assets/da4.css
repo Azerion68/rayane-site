@@ -373,3 +373,39 @@ footer p.micro:last-child{font-size:9.5px !important;letter-spacing:.2em !import
 /* À propos : titre un peu remonté */
 .about { padding-top: clamp(44px, 7vw, 108px); }
 @media (min-width: 900px) { .about { padding-top: clamp(14px, 1.6vw, 26px); } }
+
+/* ===== Audit UX : lisibilité, zones de clic, lien Devis ===== */
+@media (max-width: 899px) {
+  footer .micro, footer .micro a, footer p, .trust-label, .trust-num, .seo-text h2 { font-size: 12px !important; }
+  .site-header .micro > a:first-child { font-size: 11px !important; letter-spacing: .06em !important; }
+  .brand-role { font-size: 10px !important; }
+}
+@media (min-width: 900px) {
+  .nav-link, .subnav-link { font-size: 11.5px !important; }
+  footer .micro a, .seo-text h2 { font-size: 11.5px !important; }
+}
+/* Zones de clic élargies sans changer la mise en page */
+footer .micro a, .about-text .cta-row a, .rv-link a, .seo-text a, .hero-tags a, .site-header a[aria-label^="Instagram"], #menuOpen, #menuClose { position: relative; }
+footer .micro a::after, .about-text .cta-row a::after, .rv-link a::after, .seo-text a::after { content: ""; position: absolute; inset: -11px -4px; }
+.hero-tags a::after { content: ""; position: absolute; inset: -12px -10px; }
+.site-header a[aria-label^="Instagram"]::after, #menuOpen::after, #menuClose::after { content: ""; position: absolute; inset: -14px; }
+/* Hero : Vidéo | Devis | Photo */
+.hero-tags { display: grid; grid-template-columns: 1fr auto 1fr; align-items: end; }
+.hero-tags li:first-child { justify-self: start; }
+.hero-tags li:last-child { justify-self: end; }
+.hero-tags .tag-cta { border-bottom-color: var(--red); }
+.hero-tags .tag-cta:hover { color: var(--red); }
+/* Audit UX : surcharges des règles plus spécifiques (pied de page, menu) */
+@media (max-width: 899px) {
+  footer .micro a, footer .micro.flex a { font-size: 12px !important; letter-spacing: .12em !important; }
+  footer p.micro, footer p.micro:last-child { font-size: 12px !important; letter-spacing: .12em !important; }
+  .seo-text .micro { font-size: 12px !important; letter-spacing: .14em !important; }
+  #menu .menu-sub-link { font-size: 12px !important; }
+  #menu > div > .micro:last-child { font-size: 11.5px !important; }
+}
+@media (min-width: 900px) {
+  footer .micro a, footer .micro.flex a { font-size: 11.5px !important; }
+  footer p.micro:last-child { font-size: 11px !important; }
+  .seo-text .micro { font-size: 11.5px !important; }
+  .site-header .micro > a:first-child { font-size: 11.5px; }
+}

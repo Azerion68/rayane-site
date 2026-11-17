@@ -154,9 +154,11 @@
 <script src="assets/tailwind-config-v5.js"></script>
 <link rel="stylesheet" href="assets/style-v5.css?v=5">
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/da4.css?v=11">
+<link rel="stylesheet" href="assets/da4.css?v=13">
+<link rel="stylesheet" href="assets/lp-site.css?v=1">
+<script>document.documentElement.classList.add("lp-js");setTimeout(function(){if(!window.__lpOk)document.documentElement.classList.remove("lp-js")},4000)</script>
 <style>@media(max-width:899px){.page-hero-img{object-fit:contain!important;object-position:50% 38%!important;transform:scale(2.5);transform-origin:50% 38%}}@media(min-width:900px){.page-hero-img{transform:translateY(-13%)}}</style></head>
-<body>
+<body class="lp">
 <a href="#contenu" class="sr-only-focus fixed left-4 top-4 z-[100] bg-white px-4 py-2 text-black">Aller au contenu</a>
 
 <!-- ============================ EN-TÊTE ============================ -->
@@ -168,6 +170,7 @@
     </nav>
     <div class="flex items-center gap-5">
       <span class="hidden whitespace-nowrap text-white lg:block">Director / Filmmaker</span>
+      <a href="contact.html" class="btn hdr-cta">Devis</a>
       <a href="https://www.instagram.com/rayane.alshouli/" target="_blank" rel="noopener me" aria-label="Instagram de Rayane Al Shouli" class="text-white transition hover:text-red">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r=".9" fill="currentColor" stroke="none"/></svg>
       </a>
@@ -208,7 +211,8 @@
   <section class="panel px-4 pb-20 pt-14 md:px-12 md:pt-20" aria-labelledby="titre-approche">
     <div class="grid gap-12 lg:grid-cols-12">
       <div class="lg:col-span-5">
-        <h2 id="titre-approche" class="title-wide text-white">Le cinéma,<br>d’abord<span class="sr-only"> : réalisateur de courts-métrages de fiction à Strasbourg</span></h2>
+        <p class="lp-eyebrow">Mon regard</p>
+        <h2 id="titre-approche" class="title-wide text-white">Le cinéma, <em>d’abord</em><span class="sr-only"> : réalisateur de courts-métrages de fiction à Strasbourg</span></h2>
         <span class="redline" aria-hidden="true"></span>
       </div>
       <div class="space-y-5 font-sans text-[17px] normal-case leading-relaxed tracking-normal text-mute lg:col-span-6 lg:col-start-7" style="font-family:Barlow,sans-serif;letter-spacing:0;text-transform:none">
@@ -220,7 +224,8 @@
     </div>
   </section>
   <section class="panel px-4 pb-20 pt-14 md:px-12 md:pt-16" aria-labelledby="titre-deroule">
-    <h2 id="titre-deroule" class="title-wide text-white">Écrire, filmer,<br>faire ressentir<span class="sr-only"> : réalisateur et scénariste de fiction en Alsace</span></h2>
+    <p class="lp-eyebrow">Le déroulé</p>
+        <h2 id="titre-deroule" class="title-wide text-white">Écrire, filmer, <em>faire ressentir</em><span class="sr-only"> : réalisateur et scénariste de fiction en Alsace</span></h2>
     <span class="redline" aria-hidden="true"></span>
     <div class="mt-10 grid gap-10 md:grid-cols-3">
       <div>
@@ -242,7 +247,8 @@
     <p class="mt-10 max-w-[62ch] text-mute">Un scénario à porter à l’écran, une histoire à raconter ? Écrivez-moi : c’est avec ce regard de cinéma que je travaille aussi pour les marques.</p>
   </section>
   <section class="panel px-4 pb-20 pt-14 md:px-12 md:pt-16" aria-labelledby="titre-films">
-    <h2 id="titre-films" class="title-wide text-white">Courts-métrages<span class="sr-only"> de fiction à Strasbourg et en Alsace</span></h2>
+    <p class="lp-eyebrow">Films</p>
+        <h2 id="titre-films" class="title-wide text-white">Courts-métrages<span class="sr-only"> de fiction à Strasbourg et en Alsace</span></h2>
     <span class="redline" aria-hidden="true"></span>
     <div class="film-grid mt-10 grid gap-3 md:grid-cols-2">
         <figure class="cell">
@@ -264,7 +270,8 @@
   <section id="faq" class="panel px-4 pb-20 pt-14 md:px-12 md:pt-16" aria-labelledby="titre-faq">
     <div class="grid gap-10">
       <div class="max-w-[640px]">
-        <h2 id="titre-faq" class="title-wide text-white">Questions<span class="sr-only"> fréquentes : réalisateur de courts-métrages à Strasbourg</span></h2>
+        <p class="lp-eyebrow">Questions fréquentes</p>
+        <h2 id="titre-faq" class="title-wide text-white">Questions <em>fréquentes</em><span class="sr-only"> : réalisateur de courts-métrages à Strasbourg</span></h2>
         <span class="redline" aria-hidden="true"></span>
       </div>
       <div class="faq-list max-w-[900px]">
@@ -300,7 +307,8 @@
     </div>
   </section>
   <section class="panel px-4 pb-24 pt-14 text-center md:px-12 md:pt-20" aria-labelledby="titre-devis">
-    <h2 id="titre-devis" class="title-wide text-white">Parlons de votre histoire<span class="sr-only"> : contact réalisateur de courts-métrages à Strasbourg</span></h2>
+    <p class="lp-eyebrow">Devis</p>
+        <h2 id="titre-devis" class="title-wide text-white">Parlons de <em>votre histoire</em><span class="sr-only"> : contact réalisateur de courts-métrages à Strasbourg</span></h2>
     <span class="redline mx-auto" aria-hidden="true"></span>
     <p class="mx-auto mt-6 max-w-[56ch] text-mute">Racontez-moi en quelques lignes l’histoire que vous voulez porter à l’écran. Je vous réponds rapidement.</p>
     <p class="mt-8"><a href="contact.html" class="btn">Demander un devis <svg width="18" height="10" viewBox="0 0 18 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M0 5h16M12 1l4 4-4 4"/></svg></a></p>
@@ -376,6 +384,7 @@
 </script>
 <script src="assets/site-v5.js?v=5" defer></script>
 <script src="assets/da4.js?v=5" defer></script>
+<script src="assets/lp-site.js?v=1" defer></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9c34886e39034b93bcec8c232298c1b5"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
