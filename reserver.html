@@ -8,7 +8,7 @@
 
 <!-- ============================ SEO ============================ -->
 <title>Réserver un tournage à Strasbourg | Rayane Al Shouli</title>
-<meta name="description" content="Réservez un tournage ou un shooting à Strasbourg : vidéo verticale, vidéo vitrine, pack photo, montage. Tarifs fixes, sans paiement en ligne.">
+<meta name="description" content="Réservez un tournage ou un shooting à Strasbourg et alentour : vidéo verticale, vidéo vitrine, pack photo, montage. Tarifs fixes, un aller-retour de corrections inclus, sans paiement en ligne.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="Rayane Al Shouli">
 <meta name="application-name" content="Rayane Al Shouli Photographe / Vidéaste">
@@ -130,7 +130,7 @@
         {
           "@type": "Offer",
           "name": "Vidéo vitrine",
-          "price": "900",
+          "price": "1000",
           "priceCurrency": "EUR",
           "url": "https://rayanealshouli.fr/reserver.html",
           "availability": "https://schema.org/InStock",
@@ -153,7 +153,7 @@
         {
           "@type": "Offer",
           "name": "Pack photo",
-          "price": "200",
+          "price": "300",
           "priceCurrency": "EUR",
           "url": "https://rayanealshouli.fr/reserver.html",
           "availability": "https://schema.org/InStock",
@@ -258,7 +258,7 @@
       <p class="lp-eyebrow">Réservation en ligne</p>
       <h2 id="titre-reserver" class="title-wide text-white">Choisissez, <em>réservez</em></h2>
       <span class="redline" aria-hidden="true"></span>
-      <p class="rz-intro">Tournage vidéo ou shooting photo à Strasbourg et en Alsace. Un format, une date, vos coordonnées : c’est tout.</p>
+      <p class="rz-intro">Tournage vidéo ou shooting photo à Strasbourg et alentour. Un format, une date, vos coordonnées : c’est tout.</p>
       <div class="rz-free" role="note">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
         <div>
@@ -266,6 +266,17 @@
           <p class="rz-free-txt">Vous envoyez une simple demande, sans carte bancaire. Je confirme le créneau, puis je vous envoie le devis et la facture d’acompte.</p>
         </div>
       </div>
+
+      <ul class="rz-incl" aria-label="Conditions des tarifs">
+        <li>
+          <span class="rz-incl-k">Zone</span>
+          <span class="rz-incl-v">Tarifs valables à <strong>Strasbourg et alentour</strong>. Plus loin, <a href="contact.html">demandez un devis</a>.</span>
+        </li>
+        <li>
+          <span class="rz-incl-k">Corrections</span>
+          <span class="rz-incl-v"><strong>Un aller-retour inclus</strong> : je vous envoie la version, vous me renvoyez vos retours en une fois, je livre la version corrigée. Toute modification supplémentaire fait l’objet d’un devis.</span>
+        </li>
+      </ul>
 
       <form id="reserveForm" novalidate>
         <!-- 1. Formats -->
@@ -352,6 +363,13 @@
   @media (max-width: 639px) { .rz-br { display: inline; } .rz-sep { display: none; } }
   @media (max-width: 1023px) { .page-hero-img { filter: brightness(.38) contrast(1.1) saturate(.8); } }
   .rz-free { display: flex; gap: 16px; align-items: flex-start; margin-top: 30px; padding: 20px 22px; border: 1px solid rgba(125,207,154,.45); border-left: 3px solid #7dcf9a; background: rgba(125,207,154,.08); color: #7dcf9a; max-width: 640px; }
+  .rz-incl { list-style: none; margin: 18px 0 0; padding: 0; max-width: 640px; border-top: 1px solid rgba(242,239,234,.14); }
+  .rz-incl li { display: grid; grid-template-columns: 110px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid rgba(242,239,234,.14); align-items: baseline; }
+  .rz-incl-k { font: 500 12px/1.4 'DM Mono', monospace; letter-spacing: .14em; text-transform: uppercase; color: #ff6b55; }
+  .rz-incl-v { color: rgba(242,239,234,.82); font-size: 15px; line-height: 1.6; }
+  .rz-incl-v strong { color: #f2efea; font-weight: 600; }
+  .rz-incl-v a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+  @media (max-width: 560px) { .rz-incl li { grid-template-columns: 1fr; gap: 4px; } }
   .rz-free svg { flex: none; margin-top: 2px; }
   .rz-free-title { font: 600 clamp(1.15rem, 1.8vw, 1.4rem)/1.1 'Barlow Condensed', sans-serif; letter-spacing: .04em; text-transform: uppercase; color: #7dcf9a; }
   .rz-free-txt { margin-top: 8px; color: rgba(242,239,234,.82); font-size: 15px; line-height: 1.6; }
@@ -422,8 +440,8 @@
   const PHONE = '07 51 24 60 39';
   const FORMATS = [
     { id: 'reel', name: 'Vidéo verticale 30 s', sub: 'Reel Instagram / TikTok · tournage jusqu’à 2 h', price: 350, ex: { label: 'Voir l’exemple', name: 'Verticale Chef', video: 'video/exemples/chef.mp4', poster: 'video/exemples/chef-poster.jpg' } },
-    { id: 'vitrine', name: 'Vidéo vitrine', sub: 'Film de 1 à 2 min · tournage ½ journée', price: 900, ex: { label: 'Voir l’exemple', name: 'Punk im Elsass', video: 'video/exemples/punk.mp4', poster: 'video/exemples/punk-poster.jpg' } },
-    { id: 'photo', name: 'Pack photo', sub: 'Séance sur place · 20 visuels retouchés', price: 200, ex: { label: 'Voir les photos', name: 'Soirée dans un bar à Strasbourg', photos: ['images/evenement-bar-neon-bombay.jpg', 'images/evenement-bar-blue-moon.jpg', 'images/evenement-barman-cocktail.jpg', 'images/evenement-portrait-moustache.jpg', 'images/evenement-soiree-cocktail.jpg', 'images/evenement-portrait-capuche.jpg'] } },
+    { id: 'vitrine', name: 'Vidéo vitrine', sub: 'Film de 1 à 2 min · tournage ½ journée', price: 1000, ex: { label: 'Voir l’exemple', name: 'Punk im Elsass', video: 'video/exemples/punk.mp4', poster: 'video/exemples/punk-poster.jpg' } },
+    { id: 'photo', name: 'Pack photo', sub: 'Séance sur place · 20 visuels retouchés', price: 300, ex: { label: 'Voir les photos', name: 'Soirée dans un bar à Strasbourg', photos: ['images/evenement-bar-neon-bombay.jpg', 'images/evenement-bar-blue-moon.jpg', 'images/evenement-barman-cocktail.jpg', 'images/evenement-portrait-moustache.jpg', 'images/evenement-soiree-cocktail.jpg', 'images/evenement-portrait-capuche.jpg'] } },
     { id: 'montage', name: 'Montage 30 s', sub: 'À partir de vos rushs existants', price: 100, ex: { label: 'Voir l’exemple', name: 'Chain Dance', video: 'video/exemples/chain.mp4', poster: 'video/exemples/chain-poster.jpg' } },
   ];
   const $ = (s, r = document) => r.querySelector(s);
