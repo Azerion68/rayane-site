@@ -173,3 +173,30 @@
     });
   }
 })();
+
+/* ---------- Lien « Réserver » dans le menu, le menu mobile et le pied de page ---------- */
+(() => {
+  'use strict';
+  const here = /reserver\.html$/.test(location.pathname);
+  // Menu ordinateur
+  const navContact = document.querySelector('.site-header nav a.nav-link[href="contact.html"]');
+  if (navContact && !document.querySelector('.site-header a.nav-link[href="reserver.html"]')) {
+    const li = document.createElement('li');
+    li.innerHTML = `<a class="nav-link" href="reserver.html"${here ? ' aria-current="page"' : ''}>Réserver</a>`;
+    navContact.closest('li').insertAdjacentElement('beforebegin', li);
+  }
+  // Menu mobile
+  const menuContact = document.querySelector('#menu a.menu-link[href="contact.html"]');
+  if (menuContact && !document.querySelector('#menu a.menu-link[href="reserver.html"]')) {
+    const li = document.createElement('li');
+    li.innerHTML = '<a class="menu-link" href="reserver.html">Réserver</a>';
+    menuContact.closest('li').insertAdjacentElement('beforebegin', li);
+  }
+  // Pied de page
+  const footContact = document.querySelector('footer a[href="contact.html"]');
+  if (footContact && !document.querySelector('footer a[href="reserver.html"]')) {
+    const a = document.createElement('a');
+    a.href = 'reserver.html'; a.className = footContact.className; a.textContent = 'Réserver';
+    footContact.insertAdjacentElement('beforebegin', a);
+  }
+})();
